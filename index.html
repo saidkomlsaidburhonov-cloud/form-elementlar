@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <title>Virtual Zoopark</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #e6e6e6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container{
+            width: 95%;
+            margin: auto;
+        }
+
+        h1{
+            text-align: center;
+            border: 3px solid red;
+            border-radius: 20px;
+            padding: 10px;
+            background-color: rgb(165, 252, 252);
+        }
+
+        .yellow-bar{
+            background: yellow;
+            text-align: center;
+            font-weight: bold;
+            padding: 5px;
+            margin-top: 10px;
+        }
+
+        .images{
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .images img{
+            width: 50%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        iframe{
+            width: 100%;
+            height: 400px;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+
+        textarea{
+            width: 100%;
+            height: 70px;
+        }
+
+        .btn{
+            background: #6fa8dc;
+            border: none;
+            padding: 10px 40px;
+            color: white;
+            font-size: 16px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        th{
+            background: green;
+            color: white;
+            padding: 8px;
+        }
+
+        td{
+            background: black;
+            color: white;
+            padding: 8px;
+            text-align: center;
+        }
+
+        .red{
+            background: red !important;
+        }
+
+        .blue{
+            background: blue !important;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Xush kelibsiz, <span><mark>Virtual Zooparkga!</mark></span></h1>
+
+    <p>Bu yerda siz turli <b><i><span style="color: brown;">hayvonlarni</span></i></b> haqida qiziqarli ma'lumotlar topishingiz mumkin.</p>
+
+    <h3 style="color: rgb(25, 93, 25);">Bizning hayvonlar</h3>
+    <ul>
+        <li>Arslonlar - o'rmon qirollari</li>
+        <li>Filar - yer yuzidagi eng katta quruqlik hayvonlari</li>
+    </ul>
+
+    <div class="yellow-bar">Hayvonlar haqida qiziqarli faktlar</div>
+
+    <div class="images">
+        <img src="https://images.unsplash.com/photo-1546182990-dffeafbe841d" alt="Sherlar">
+        <img src="https://images.unsplash.com/photo-1614027164847-1b28cfe1df60" alt="Arslon">
+    </div>
+
+    <div class="yellow-bar">Hayvonlarni ko'rish</div>
+
+    <iframe src="https://www.youtube.com/embed/OMkEVX23BdM"
+            allowfullscreen>
+    </iframe>
+
+    <h3>O'z fikringizni yozib qoldiring</h3>
+    <textarea></textarea>
+
+    <h3>Sevimli hayvoningiz qaysi</h3>
+    <input type="radio" name="fav"> Arslon <br>
+    <input type="radio" name="fav"> Fil <br>
+
+    <button class="btn">Jo'natish</button>
+
+    <div class="yellow-bar">Hayvonlar haqida to'liq ma'lumotlar jadvali</div>
+
+    <table border="1">
+        <tr>
+            <th>Hayvon</th>
+            <th class="blue">Qiziqarli fakt</th>
+        </tr>
+        <tr>
+            <td class="red">Arslon</td>
+            <td>Arslonlar kunning 20 soatini uyqu bilan o'tkazishadi</td>
+        </tr>
+        <tr>
+            <td class="red">Fil</td>
+            <td>Fillar suvni o'zlarini burni bilan ichishadi</td>
+        </tr>
+    </table>
+
+</div>
+
+</body>
+</html>
